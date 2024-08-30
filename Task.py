@@ -53,7 +53,3 @@ else:
         time.sleep(0.4)
         print()
         print("THANK YOU VISIT AGAIN")
-               
-               
-
-
