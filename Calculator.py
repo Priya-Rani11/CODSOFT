@@ -22,7 +22,7 @@ def sqt(x):
     return x**0.5
 def calculator():
     while True:
-        print("Welcome to basic calculator")
+        
         print("Select operation to do ")
         print("1. ADDITION")
         print("2. SUBTRACTION")
@@ -79,8 +79,7 @@ def calculator():
                 
                 qrt=sqt(num)
                 print(f"SQUARE ROOT OF {num} IS {qrt} .")
-        elif choice not in int:
-            print("invalid")
+        
         elif choice== 10:
             break
         else:
@@ -102,6 +101,7 @@ def calculator():
         if next=='no':
             print("Thank you")
             break
-
+print(".....Welcome to basic calculator.....")
+print("*"*40)
 calculator()
 
