@@ -36,7 +36,7 @@ def calculator():
         print("10. EXIT")
         choice=int(input("PRESS THE NUMBER :"))
 
-        if choice in [1,2,3,4,5,6,7,8,9]:
+        if choice in [1,2,3,4,7,9]:
             num1=float(input("PRESS NUMBER 1 : "))
             num2=float(input("PRESS NUMBER 2 : "))
             if choice ==1:
@@ -57,8 +57,6 @@ def calculator():
                 d=division(num1,num2)
                 print(f"DIVISION OF {num1} AND  {num2} IS {d} .")
             
-            
-                print("CUBE OF ",num1, "IS",s,".")
             elif choice==7:
                 print(f"TAKING {num1} AS NUMBER AND {num2} AS BASE .")
                 l=log(num1,num2)
@@ -67,19 +65,22 @@ def calculator():
                 print(f"CONSIDERING {num1} AS BASE AND {num2} AS EXPONENT .")
                 r=pw(num1,num2)
                 print(f"{num1} TO THE POWER{num2} IS {r} . ")
-        elif choice==6:
+        elif choice in [5,6,8]:
             num=float(input("ENTER NUMBER : "))
-            s=qu(num)
-            print(f"CUBE OF {num} IS {s} .")
-        elif choice==5:
-            num=float(input("ENTER NUMBER: "))
-            s=sq(num)
-            print("SQUARE OF ",num1, "IS",s,".")
-        elif choice==8:
-            num=float(input("ENTER NUMBER: "))
-            qrt=sqt(num)
-
-            print(f"SQUARE ROOT OF {num1} IS {qrt} .")
+            if choice==6:
+                
+                s=qu(num)
+                print(f"CUBE OF {num} IS {s} .")
+            elif choice==5:
+                
+                s=sq(num)
+                print("SQUARE OF ",num, "IS",s,".")
+            elif choice==8:
+                
+                qrt=sqt(num)
+                print(f"SQUARE ROOT OF {num} IS {qrt} .")
+        elif choice not in int:
+            print("invalid")
         elif choice== 10:
             break
         else:
@@ -87,8 +88,19 @@ def calculator():
             print("PLEASE ENTER CORRECT OPTION ")
             continue
 # 1 2 3 4 7 9
-        next=input("DO YOU WANT TO SOLVE ANOTHER QUESTION: (yes/no)   :  ").strip().lower()
-        if next !="yes":
+        while True:
+            next=input("DO YOU WANT TO SOLVE ANOTHER QUESTION: (yes/no)   :  ").strip().lower()
+            if next not in ['yes','no']:
+                print("Invalid choice")
+                continue
+            elif next =="yes":
+                break
+            
+            else:
+                break
+
+        if next=='no':
+            print("Thank you")
             break
 
 calculator()
