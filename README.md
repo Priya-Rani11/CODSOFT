@@ -7,12 +7,13 @@ Total number of task done : 3
 <ol><li>Rock
 <li>Paper
 <li>Scissors</ol> 
-<li> Computer choose 1 option from them and compute logic.
+<li> Computer also chooses 1 option from them and compute logic.
+<li>Display the result
 <li>Track scores of user and computer as well as total number of rounds played till now.
 <li>Take input whether to play again or not.
 <li>Deals with invalid input given by the user. <br>
 <i> in play again option and in main 3 options of rps</i>
-<li>Ask for Feedback input from the user.
+<li>Ask for <b>Feedback<b> input from the user.
 </ul>
 <hr>
 <li> <b>Calculator </b>
@@ -33,12 +34,14 @@ Total number of task done : 3
 <li>Asks for another question to solve or not.
 <li>Repeat the process if yes, exit the process if no, otherwise ask once again as input given is invalid.
 </ul>
+<hr>
 <li><b>Password Generator</b>
 <ul><li>Takes input for the length of the password.
 <li>Takes input as the complexity of the password.
-<li>It has 3 level of complexity.
-<li>Produce output as perr the input provided.
+<li>It has <b>3</b> level of complexity.
+<li>Produce output as per the input provided.
 </ul>
 </ol>
 <hr>
-Done by Priya Rani
+<i>THANK YOU</i>
+<strong>Done by Priya Rani</strong>
